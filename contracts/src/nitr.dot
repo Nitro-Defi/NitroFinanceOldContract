@@ -1,0 +1,206 @@
+digraph G {
+  graph [ ratio = "auto", page = "100", compound =true, bgcolor = "#2e3e56" ];
+  node [ style = "filled", fillcolor = "#edad56", color = "#edad56", penwidth =3 ];
+  edge [ color = "#fcfcfc", penwidth =2, fontname = "helvetica Neue Ultra Light" ];
+subgraph "clusterSOL4" {
+  graph [ label = "SOL4", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "SOL4.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "SOL4.addLiquidity" [ label = "addLiquidity", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4._create" [ label = "_create" ];
+  "SOL4._update" [ label = "_update" ];
+  "SOL4.borrow" [ label = "borrow", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4._initBorrow" [ label = "_initBorrow" ];
+  "SOL4._subBorrows" [ label = "_subBorrows" ];
+  "SOL4._tmcr" [ label = "_tmcr" ];
+  "SOL4.addCollateral" [ label = "addCollateral", color = "brown", fillcolor = "#ffbdb9" ];
+  "SOL4.withdrawLiquidity" [ label = "withdrawLiquidity", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4.withdrawCollateral" [ label = "withdrawCollateral", color = "brown", fillcolor = "#ffbdb9" ];
+  "SOL4.validatWithdraw" [ label = "validatWithdraw" ];
+  "SOL4.repay" [ label = "repay", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4.liquidate" [ label = "liquidate", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4.UpdatePoolAfterLiquidation" [ label = "UpdatePoolAfterLiquidation", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4.chackIfLiquidationIsAllowed" [ label = "chackIfLiquidationIsAllowed", color = "#FF9797", fillcolor = "#FF9797" ];
+  "SOL4.setLiquidationThreshold" [ label = "setLiquidationThreshold", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "SOL4.cook" [ label = "cook" ];
+  "SOL4.getNowInternal" [ label = "getNowInternal", color = "#FF9797", fillcolor = "#FF9797" ];
+  "SOL4.accuredK" [ label = "accuredK" ];
+  "SOL4.NFTManager" [ label = "NFTManager" ];
+  "SOL4.IERC20" [ label = "IERC20" ];
+  "SOL4.PriceAggregator" [ label = "PriceAggregator" ];
+  "SOL4.BorrowLogic" [ label = "BorrowLogic" ];
+  "SOL4.put" [ label = "put" ];
+  "SOL4.update" [ label = "update" ];
+  "SOL4.LOCUS_NOT_IN_EXISTENCE" [ label = "LOCUS_NOT_IN_EXISTENCE" ];
+  "SOL4.BORROWTRANSACTIONS" [ label = "BORROWTRANSACTIONS" ];
+  "SOL4.payable" [ label = "payable" ];
+  "SOL4.NOT_OWING" [ label = "NOT_OWING" ];
+  "SOL4.LIQUIDATEDTRANSACTIONS" [ label = "LIQUIDATEDTRANSACTIONS" ];
+  "SOL4.CANT_BE_LIQUIDATED" [ label = "CANT_BE_LIQUIDATED" ];
+  "SOL4.TimestampTooLarge" [ label = "TimestampTooLarge" ];
+}
+
+subgraph "clusterIERC20" {
+  graph [ label = "IERC20", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "IERC20.transferFrom" [ label = "transferFrom" ];
+  "IERC20.transfer" [ label = "transfer" ];
+}
+
+subgraph "clusterNFTManager" {
+  graph [ label = "NFTManager", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "NFTManager.createPosition" [ label = "createPosition" ];
+  "NFTManager.transferFrom" [ label = "transferFrom" ];
+  "NFTManager.burn" [ label = "burn" ];
+}
+
+subgraph "clusterPriceAggregator" {
+  graph [ label = "PriceAggregator", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "PriceAggregator.getConversionRateUsdc" [ label = "getConversionRateUsdc" ];
+  "PriceAggregator.inverseConversionEth" [ label = "inverseConversionEth" ];
+}
+
+subgraph "clusterSafeMath" {
+  graph [ label = "SafeMath", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "SafeMath.div" [ label = "div" ];
+  "SafeMath.mul" [ label = "mul" ];
+}
+
+subgraph "clusterFullMath" {
+  graph [ label = "FullMath", color = "#e8726d", fontcolor = "#f0f0f0", style = "rounded,dashed", bgcolor = "#3b4b63" ];
+  "FullMath.mulDivRoundingUp" [ label = "mulDivRoundingUp" ];
+}
+
+  "SOL4.<Constructor>";
+  "SOL4.NFTManager";
+  "SOL4.IERC20";
+  "SOL4.PriceAggregator";
+  "SOL4.BorrowLogic";
+  "SOL4.addLiquidity";
+  "SOL4._create";
+  "SOL4._update";
+  "SOL4.put";
+  "IERC20.transferFrom";
+  "NFTManager.createPosition";
+  "SOL4.update";
+  "PriceAggregator.getConversionRateUsdc";
+  "SOL4.accuredK";
+  "SafeMath.div";
+  "SOL4.borrow";
+  "SOL4._initBorrow";
+  "SOL4._subBorrows";
+  "SOL4.cook";
+  "SOL4.LOCUS_NOT_IN_EXISTENCE";
+  "IERC20.transfer";
+  "SOL4.BORROWTRANSACTIONS";
+  "SOL4._tmcr";
+  "FullMath.mulDivRoundingUp";
+  "SOL4.addCollateral";
+  "PriceAggregator.inverseConversionEth";
+  "SOL4.withdrawLiquidity";
+  "NFTManager.transferFrom";
+  "NFTManager.burn";
+  "SOL4.withdrawCollateral";
+  "SOL4.payable";
+  "SOL4.validatWithdraw";
+  "SOL4.NOT_OWING";
+  "SOL4.repay";
+  "SOL4.liquidate";
+  "SafeMath.mul";
+  "SOL4.LIQUIDATEDTRANSACTIONS";
+  "SOL4.CANT_BE_LIQUIDATED";
+  "SOL4.chackIfLiquidationIsAllowed";
+  "SOL4.getNowInternal";
+  "SOL4.TimestampTooLarge";
+  "SOL4.<Constructor>" -> "SOL4.NFTManager" [ color = "#1bc6a6" ];
+  "SOL4.<Constructor>" -> "SOL4.IERC20" [ color = "#1bc6a6" ];
+  "SOL4.<Constructor>" -> "SOL4.PriceAggregator" [ color = "#1bc6a6" ];
+  "SOL4.<Constructor>" -> "SOL4.BorrowLogic" [ color = "#1bc6a6" ];
+  "SOL4.addLiquidity" -> "SOL4._create" [ color = "#1bc6a6" ];
+  "SOL4.addLiquidity" -> "SOL4._update" [ color = "#1bc6a6" ];
+  "SOL4._create" -> "SOL4.put" [ color = "#1bc6a6" ];
+  "SOL4._create" -> "IERC20.transferFrom" [ color = "white" ];
+  "SOL4._create" -> "NFTManager.createPosition" [ color = "white" ];
+  "SOL4._update" -> "SOL4.update" [ color = "#1bc6a6" ];
+  "SOL4._update" -> "PriceAggregator.getConversionRateUsdc" [ color = "white" ];
+  "SOL4._update" -> "IERC20.transferFrom" [ color = "white" ];
+  "SOL4._update" -> "NFTManager.createPosition" [ color = "white" ];
+  "SOL4._update" -> "SOL4.accuredK" [ color = "#1bc6a6" ];
+  "SOL4._update" -> "SafeMath.div" [ color = "white" ];
+  "SOL4._update" -> "NFTManager.createPosition" [ color = "white" ];
+  "SOL4.borrow" -> "SOL4._initBorrow" [ color = "#1bc6a6" ];
+  "SOL4.borrow" -> "SOL4._subBorrows" [ color = "#1bc6a6" ];
+  "SOL4._initBorrow" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4._initBorrow" -> "SOL4.LOCUS_NOT_IN_EXISTENCE" [ color = "#1bc6a6" ];
+  "SOL4._initBorrow" -> "IERC20.transfer" [ color = "white" ];
+  "SOL4._initBorrow" -> "SOL4.BORROWTRANSACTIONS" [ color = "#1bc6a6" ];
+  "SOL4._subBorrows" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4._subBorrows" -> "SOL4.LOCUS_NOT_IN_EXISTENCE" [ color = "#1bc6a6" ];
+  "SOL4._subBorrows" -> "SOL4._tmcr" [ color = "#1bc6a6" ];
+  "SOL4._subBorrows" -> "PriceAggregator.getConversionRateUsdc" [ color = "white" ];
+  "SOL4._subBorrows" -> "IERC20.transfer" [ color = "white" ];
+  "SOL4._subBorrows" -> "SOL4.BORROWTRANSACTIONS" [ color = "#1bc6a6" ];
+  "SOL4._tmcr" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4._tmcr" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4._tmcr" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4._tmcr" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4.addCollateral" -> "PriceAggregator.inverseConversionEth" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4.withdrawLiquidity" -> "NFTManager.transferFrom" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "NFTManager.burn" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "PriceAggregator.getConversionRateUsdc" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "IERC20.transferFrom" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "NFTManager.transferFrom" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "PriceAggregator.getConversionRateUsdc" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "IERC20.transferFrom" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "NFTManager.createPosition" [ color = "white" ];
+  "SOL4.withdrawLiquidity" -> "NFTManager.burn" [ color = "white" ];
+  "SOL4.withdrawCollateral" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4.withdrawCollateral" -> "SOL4.payable" [ color = "#1bc6a6" ];
+  "SOL4.withdrawCollateral" -> "SOL4.validatWithdraw" [ color = "#1bc6a6" ];
+  "SOL4.validatWithdraw" -> "SOL4.NOT_OWING" [ color = "#1bc6a6" ];
+  "SOL4.validatWithdraw" -> "SOL4.payable" [ color = "#1bc6a6" ];
+  "SOL4.validatWithdraw" -> "SOL4.payable" [ color = "#1bc6a6" ];
+  "SOL4.repay" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4.repay" -> "SOL4.NOT_OWING" [ color = "#1bc6a6" ];
+  "SOL4.repay" -> "PriceAggregator.getConversionRateUsdc" [ color = "white" ];
+  "SOL4.repay" -> "IERC20.transferFrom" [ color = "white" ];
+  "SOL4.liquidate" -> "SOL4.cook" [ color = "#1bc6a6" ];
+  "SOL4.liquidate" -> "SafeMath.mul" [ color = "white" ];
+  "SOL4.liquidate" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4.liquidate" -> "SOL4.payable" [ color = "#1bc6a6" ];
+  "SOL4.liquidate" -> "SOL4.LIQUIDATEDTRANSACTIONS" [ color = "#1bc6a6" ];
+  "SOL4.liquidate" -> "SOL4.CANT_BE_LIQUIDATED" [ color = "#1bc6a6" ];
+  "SOL4.chackIfLiquidationIsAllowed" -> "SafeMath.mul" [ color = "white" ];
+  "SOL4.chackIfLiquidationIsAllowed" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4.cook" -> "PriceAggregator.inverseConversionEth" [ color = "white" ];
+  "SOL4.getNowInternal" -> "SOL4.TimestampTooLarge" [ color = "#1bc6a6" ];
+  "SOL4.accuredK" -> "SOL4.getNowInternal" [ color = "#1bc6a6" ];
+  "SOL4.accuredK" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+  "SOL4.accuredK" -> "FullMath.mulDivRoundingUp" [ color = "white" ];
+
+
+rankdir=LR
+node [shape=plaintext]
+subgraph cluster_01 { 
+label = "Legend";
+key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td align="right" port="i1">Internal Call</td></tr>
+  <tr><td align="right" port="i2">External Call</td></tr>
+  <tr><td align="right" port="i3">Defined Contract</td></tr>
+  <tr><td align="right" port="i4">Undefined Contract</td></tr>
+  </table>>]
+key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td port="i1">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i2">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i3" bgcolor="#445773">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i4">
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="7" color="#e8726d">
+      <tr>
+       <td></td>
+      </tr>
+     </table>
+  </td></tr>
+  </table>>]
+key:i1:e -> key2:i1:w [color="#1bc6a6"]
+key:i2:e -> key2:i2:w [color="white"]
+}
+}
